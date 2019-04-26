@@ -1,0 +1,40 @@
+<%include partial/header %>
+
+	<body>
+
+		<div class="wrapper">
+            <form action="/imageadded" method="POST" class="form-group" enctype="multipart/form-data">
+            	<div id="wizard">
+            		<!-- SECTION 1 -->
+	                <h4></h4>
+	                <section>
+	                	<div class="form-header">
+	                	 <%= typeof msg!== "undefined" ? msg : ''%>
+	                		<div class="avartar">
+								<div class="avartar-picker">
+									<input type="file" name="uploadedimage" id="file-1"  />
+									<label for="file-1">
+										<i class="zmdi zmdi-camera"></i>
+										<span>Choose Picture</span>
+									</label>
+								</div>
+							</div>							
+	                	</div>
+						<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Register">
+				</div>
+	                </section>
+            	</div>
+            </form>
+		</div>
+
+
+		<script src="../resources/js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="../resources/js/jquery.steps.js"></script>
+
+		<script src="../resources/js/main.js"></script>
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
